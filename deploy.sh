@@ -4,6 +4,14 @@ echo
 echo "Deployment started"
 echo
 
+echo
+echo "STATUS - Pushing to source repo"
+echo
+git push origin master || { echo "FAILURE - Push to source repo failed!"; exit 1; }
+echo
+echo "SUCCESS - Pushed to source repo"
+echo
+
 rm -rf _site
 echo
 echo "STATUS - Deleted old _site folder"
@@ -69,7 +77,7 @@ echo
 echo
 echo "STATUS - Pushing to deploy repo"
 echo
-git push origin master || { echo "FAILURE - Push in deploy repo failed!"; exit 1; }
+git push origin master || { echo "FAILURE - Push to deploy repo failed!"; exit 1; }
 echo
 echo "SUCCESS - Pushed to deploy repo"
 echo
