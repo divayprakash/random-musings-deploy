@@ -38,4 +38,9 @@ var store = [{
         "excerpt":"When life gives you lemons, chunk it right back. Bill Waterson I guess life is handing out lemons today. Oh how I’d like to chunk them right back. Netlify works! It just works. It’s simple to set up and painless to maintain. All I had to do was revert to...","categories": ["blogging"],
         "tags": ["life","lemons"],
         "url": "https://randmusings.github.io/blogging/2020/02/19/success.html"
+      },{
+        "title": "It's done!",
+        "excerpt":"After various false starts over the past years and days of trial and error (and the associated misery and joy) in this instance, I’m finally at a place where I can say that - The blog is done! At the very least, it’s done enough that I don’t feel the...","categories": ["blogging"],
+        "tags": ["misadventure","success"],
+        "url": "https://randmusings.github.io/blogging/2020/02/21/it-s-done.html"
       }]

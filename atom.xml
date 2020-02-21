@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://randmusings.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://randmusings.github.io/" rel="alternate" type="text/html" /><updated>2020-02-21T01:07:53+05:30</updated><id>https://randmusings.github.io/atom.xml</id><title type="html">Random Musings</title><subtitle>A geek's eclectic contemplations</subtitle><author><name>Divay Prakash</name><email>divayprakash0@gmail.com</email></author><entry><title type="html">Success*</title><link href="https://randmusings.github.io/blogging/2020/02/19/success.html" rel="alternate" type="text/html" title="Success*" /><published>2020-02-19T18:30:00+05:30</published><updated>2020-02-19T18:30:00+05:30</updated><id>https://randmusings.github.io/blogging/2020/02/19/success</id><content type="html" xml:base="https://randmusings.github.io/blogging/2020/02/19/success.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://randmusings.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://randmusings.github.io/" rel="alternate" type="text/html" /><updated>2020-02-21T14:40:03+05:30</updated><id>https://randmusings.github.io/atom.xml</id><title type="html">Random Musings</title><subtitle>A geek's eclectic contemplations</subtitle><author><name>Divay Prakash</name><email>divayprakash0@gmail.com</email></author><entry><title type="html">It’s done!</title><link href="https://randmusings.github.io/blogging/2020/02/21/it-s-done.html" rel="alternate" type="text/html" title="It's done!" /><published>2020-02-21T12:32:00+05:30</published><updated>2020-02-21T12:32:00+05:30</updated><id>https://randmusings.github.io/blogging/2020/02/21/it-s-done</id><content type="html" xml:base="https://randmusings.github.io/blogging/2020/02/21/it-s-done.html">&lt;p&gt;After various false starts over the past years and days of trial and error (and the associated misery and joy) in this instance, I’m finally at a place where I can say that -&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The blog is done!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;At the very least, it’s done enough that I don’t feel the need to tinker with it any more&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to change this or that and I’m comfortable just getting on with the business of actually putting my thoughts and feelings down.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+    &lt;img src=&quot;/assets/img/happy.gif&quot; /&gt;
+    &lt;figcaption&gt;Because I'm happy... :notes:&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;So, how did I get here? Well, as I talked about in my &lt;a href=&quot;/blogging/2020/02/19/success.html&quot;&gt;last post&lt;/a&gt;, deployment with Netlify worked like a breeze. However, I wanted to shorten the build times just to simplify things on the server end and make everything less of a pain to setup again if need be. The setup I currently have makes this virtually painless! Here’s how it works -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The main Jekyll blog files are present in a &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; &lt;a href=&quot;https://github.com/divayprakash/random-musings/&quot;&gt;repo&lt;/a&gt;. I clone this on my local machine and run a &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; and it’s ready to go&lt;/li&gt;
+  &lt;li&gt;I can create posts, add asset files, and whatever I need to do - here, in this repo. All this is saved with a &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;There is a separate &lt;code class=&quot;highlighter-rouge&quot;&gt;deploy&lt;/code&gt; &lt;a href=&quot;https://github.com/divayprakash/random-musings-deploy/&quot;&gt;repo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Once I’m done working, I simply run the &lt;code class=&quot;highlighter-rouge&quot;&gt;deploy.sh&lt;/code&gt; script which does all the heavy lifting for deployment&lt;/li&gt;
+  &lt;li&gt;The &lt;a href=&quot;https://github.com/divayprakash/random-musings/blob/master/deploy.sh&quot;&gt;script&lt;/a&gt; runs through the following steps -
+    &lt;ol&gt;
+      &lt;li&gt;Push &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch of &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; repo&lt;/li&gt;
+      &lt;li&gt;Delete old &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder and create anew&lt;/li&gt;
+      &lt;li&gt;Clone the &lt;code class=&quot;highlighter-rouge&quot;&gt;deploy&lt;/code&gt; repo into new &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder&lt;/li&gt;
+      &lt;li&gt;Read details of last commit in &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; repo on local machine&lt;/li&gt;
+      &lt;li&gt;Build Jekyll site&lt;/li&gt;
+      &lt;li&gt;Switch to &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder&lt;/li&gt;
+      &lt;li&gt;Add site files generated in step 5 in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder to index of &lt;code class=&quot;highlighter-rouge&quot;&gt;deploy&lt;/code&gt; repo&lt;/li&gt;
+      &lt;li&gt;Creates commit in &lt;code class=&quot;highlighter-rouge&quot;&gt;deploy&lt;/code&gt; repo with commit message using details extracted in step 4&lt;/li&gt;
+      &lt;li&gt;Push commits to &lt;code class=&quot;highlighter-rouge&quot;&gt;deploy&lt;/code&gt; repo&lt;/li&gt;
+      &lt;li&gt;Delete &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder&lt;/li&gt;
+      &lt;li&gt;As a &lt;strong&gt;&lt;em&gt;bonus&lt;/em&gt;&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Print updates, divided into 3 categories - ‘STATUS’, ‘SUCCESS’, ‘FAILURE’&lt;/li&gt;
+          &lt;li&gt;Exit gracefully in case any command fails, along with an appropriate error message&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A Netlify deploy is triggered whenever the &lt;code class=&quot;highlighter-rouge&quot;&gt;deploy&lt;/code&gt; repo is updated, copying the static website files generated by Jekyll over to Netlify’s servers&lt;/li&gt;
+  &lt;li&gt;New and updated site goes live &lt;a href=&quot;https://randommusings.netlify.io/&quot;&gt;here&lt;/a&gt;!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The script does all this work so I don’t have to. I know it’s very rudimentary, but it’s basic automation at its best. I’m really pleased with the results; the deploy time on Netlify has been cut down from over 5 minutes to just &lt;strong&gt;&lt;em&gt;6 seconds&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+    &lt;img src=&quot;/assets/img/up-to-eleven.jpg&quot; /&gt;
+    &lt;figcaption&gt;Automation &lt;a href=&quot;https://en.wikipedia.org/wiki/Up_to_eleven&quot;&gt;up to 11!&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Very much an &lt;em&gt;only at the moment&lt;/em&gt; feeling, if I’m being perfectly honest. I am a perfectionist at heart so no project of mine is ever truly finished. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Divay Prakash</name><email>divayprakash0@gmail.com</email></author><category term="misadventure" /><category term="success" /><summary type="html">After various false starts over the past years and days of trial and error (and the associated misery and joy) in this instance, I’m finally at a place where I can say that -</summary></entry><entry><title type="html">Success*</title><link href="https://randmusings.github.io/blogging/2020/02/19/success.html" rel="alternate" type="text/html" title="Success*" /><published>2020-02-19T18:30:00+05:30</published><updated>2020-02-19T18:30:00+05:30</updated><id>https://randmusings.github.io/blogging/2020/02/19/success</id><content type="html" xml:base="https://randmusings.github.io/blogging/2020/02/19/success.html">&lt;blockquote&gt;
   &lt;p&gt;When life gives you lemons, chunk it right back.&lt;/p&gt;
 
   &lt;p&gt;&lt;cite&gt;&lt;a href=&quot;https://www.goodreads.com/quotes/112530-when-life-gives-you-lemons-chunk-it-right-back&quot;&gt;Bill Waterson&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
