@@ -1,1 +1,1 @@
-Sitemap: https://randmusings.github.io/sitemap.xml
+Sitemap: https://randommusings.netlify.com/sitemap.xml
