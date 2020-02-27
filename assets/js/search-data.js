@@ -43,4 +43,9 @@ var store = [{
         "excerpt":"After various false starts over the past years and days of trial and error (and the associated misery and joy) in this instance, I’m finally at a place where I can say that - The blog is done! At the very least, it’s done enough that I don’t feel the...","categories": ["blogging"],
         "tags": ["misadventure","success"],
         "url": "https://randommusings.netlify.com/blogging/2020/02/21/it-s-done.html"
+      },{
+        "title": "So much to do... and SO MUCH time to do it in",
+        "excerpt":"In the words of the hallowed ‘Satchmo’ - There’s so little time and so much to do Louis “Satchmo” Armstrong At the moment, I am in my last semester of MBA studies at SCMHRD. Classes are over, and it’s only a few sporadic tests or assignment submissions here and there...","categories": ["blogging"],
+        "tags": ["boredom","time"],
+        "url": "https://randommusings.netlify.com/blogging/2020/02/26/so-much-to-do-and-so-much-time-to-do-it-in.html"
       }]
