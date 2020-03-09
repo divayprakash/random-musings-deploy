@@ -27,7 +27,7 @@ echo
 echo
 echo "Cloning deploy repo into _site folder"
 echo
-git clone https://github.com/divayprakash/random-musings-deploy.git . || { echo 'FAILURE - Cloning deploy repo failed!'; exit 1; }
+git clone --depth 1 https://github.com/divayprakash/random-musings-deploy.git . || { echo 'FAILURE - Cloning deploy repo failed!'; exit 1; }
 echo
 echo "SUCCESS - Cloned deploy repo into _site folder"
 echo
