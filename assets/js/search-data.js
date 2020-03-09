@@ -46,11 +46,11 @@ var store = [{
       },{
         "title": "So much to do... and SO MUCH time to do it in",
         "excerpt":"In the words of the hallowed ‘Satchmo’ - There’s so little time and so much to do Louis “Satchmo” Armstrong At the moment, I am in my last semester of MBA studies at SCMHRD. Classes are over, and it’s only a few sporadic tests or assignment submissions here and there...","categories": ["life"],
-        "tags": ["boredom","time"],
+        "tags": ["boredom","time","philosophy"],
         "url": "https://randommusings.netlify.com/life/2020/02/26/so-much-to-do-and-so-much-time-to-do-it-in.html"
       },{
         "title": "Promises Promises",
         "excerpt":"I made a promise to myself to stop wasting time watching random shit on Youtube and instead use that time to read something or blog or just do anything else more productive. A progress report - I’m doing better… sort of. Why only “sort of”? Well, I haven’t done as...","categories": ["life"],
-        "tags": ["time","hope"],
+        "tags": ["philosophy"],
         "url": "https://randommusings.netlify.com/life/2020/03/06/promises-promises.html"
       }]
