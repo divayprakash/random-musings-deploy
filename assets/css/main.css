@@ -859,16 +859,16 @@ figure.align-center figcaption { text-align: center; }
 figcaption { font-style: italic; }
 
 /* Darken body background color and border color */
-body { background: #15171d !important; border-top-color: #15171d !important; }
+body { background: #111111 !important; border-top-color: #111111 !important; }
 
 /* Darken nav list background color */
-.site-nav ul { background-color: #15171d !important; }
+.site-nav ul { background-color: #111111 !important; }
 
 /* Darken nav links border color */
-.site-nav a { border-color: #15171d !important; }
+.site-nav a { border-color: #111111 !important; }
 
 /* Darken site logo image border color */
-.site-logo-img { border-color: #15171d !important; }
+.site-logo-img { border-color: #111111 !important; }
 
 /* Site footer */
 .site-footer { border-top: none; padding-bottom: 0; }
