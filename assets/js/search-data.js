@@ -53,4 +53,9 @@ var store = [{
         "excerpt":"I made a promise to myself to stop wasting time watching random shit on Youtube and instead use that time to read something or blog or just do anything else more productive. A progress report - I’m doing better… sort of. Why only “sort of”? Well, I haven’t done as...","categories": ["life"],
         "tags": ["philosophy"],
         "url": "https://randommusings.netlify.com/life/2020/03/06/promises-promises.html"
+      },{
+        "title": "Small updates",
+        "excerpt":"How does it happen that simple things always manage to take up so much time? I don’t have the first clue, but I know it’s true. It’s happened to me too much for me to not believe in it. Anyhow, I’ve been working on a few things for the blog....","categories": ["blogging"],
+        "tags": ["enhancement"],
+        "url": "https://randommusings.netlify.com/blogging/2020/03/09/small-updates.html"
       }]
