@@ -1,97 +1,97 @@
 #!/bin/sh.exe
 
 echo
-echo "Deployment started"
+echo -e "\e[30;43;mDeployment started \e[0m"
 echo
 
 echo
-echo "STATUS - Pushing to source repo"
+echo -e "\e[30;43;mSTATUS - Pushing to source repo  \e[0m"
 echo
-git push origin master || { echo "FAILURE - Push to source repo failed!"; exit 1; }
+git push origin master || { echo -e "\e[30;101;mFAILURE - Push to source repo failed! \e[0m"; exit 1; }
 echo
-echo "SUCCESS - Pushed to source repo"
+echo -e "\e[30;42;mSUCCESS - Pushed to source repo \e[0m"
 echo
 
 rm -rf _site
 echo
-echo "STATUS - Deleted old _site folder"
+echo -e "\e[30;43;mSTATUS - Deleted old _site folder \e[0m"
 echo
 
 
 mkdir _site
 cd _site
 echo
-echo "STATUS - Created new _site folder"
+echo -e "\e[30;43;mSTATUS - Created new _site folder \e[0m"
 echo
 
 echo
-echo "Cloning deploy repo into _site folder"
+echo -e "\e[30;43;mSTATUS - Cloning deploy repo into _site folder \e[0m"
 echo
-git clone --depth 1 https://github.com/divayprakash/random-musings-deploy.git . || { echo 'FAILURE - Cloning deploy repo failed!'; exit 1; }
+git clone --depth 1 https://github.com/divayprakash/random-musings-deploy.git . || { echo -e "\e[30;101;mFAILURE - Cloning deploy repo failed! \e[0m"; exit 1; }
 echo
-echo "SUCCESS - Cloned deploy repo into _site folder"
+echo -e "\e[30;42;mSUCCESS - Cloned deploy repo into _site folder \e[0m"
 echo
 
 cd ..
 echo
-echo "STATUS - Changed directory to root"
+echo -e "\e[30;43;mSTATUS - Changed directory to root \e[0m"
 echo
 
 echo
-echo "STATUS - Reading last commit details"
+echo -e "\e[30;43;mSTATUS - Reading last commit details \e[0m"
 echo
 commit_details=$(git log -n 1 --pretty=format:"%h : \"%s\"")
 echo
-echo "STATUS - Last commit details - ${commit_details}"
+echo -e "\e[30;43;mSTATUS - Last commit details - ${commit_details} \e[0m"
 echo
 
 echo
-echo "STATUS - Running Jekyll build"
+echo -e "\e[30;43;mSTATUS - Running Jekyll build \e[0m"
 echo
-bundle exec jekyll build || { echo 'FAILURE - Build failed!'; exit 1; }
+bundle exec jekyll build || { echo -e "\e[30;101;mFAILURE - Build failed! \e[0m"; exit 1; }
 echo
-echo "SUCCESS - Ran Jekyll build"
+echo -e "\e[30;42;mSUCCESS - Ran Jekyll build \e[0m"
 echo
 
 cd _site/
 echo
-echo "STATUS - Directory changed to : $(pwd)"
+echo -e "\e[30;43;mSTATUS - Directory changed to : $(pwd) \e[0m"
 echo
 
 echo
-echo "STATUS - Adding files to index of deploy repo"
+echo -e "\e[30;43;mSTATUS - Adding files to index of deploy repo \e[0m"
 echo
-git add . || { echo "FAILURE - Adding files to index of deploy repo failed!"; exit 1; }
+git add . || { echo -e "\e[30;101;mFAILURE - Adding files to index of deploy repo failed! \e[0m"; exit 1; }
 echo
-echo "SUCCESS - Added files to index of deploy repo"
-echo
-
-echo
-echo "STATUS - Creating commit in deploy repo"
-echo
-git commit -m "Deploy ${commit_details}" || { echo "FAILURE - Commit in deploy repo failed!"; exit 1; }
-echo
-echo "SUCCESS - Created commit in deploy repo"
+echo -e "\e[30;42;mSUCCESS - Added files to index of deploy repo \e[0m"
 echo
 
 echo
-echo "STATUS - Pushing to deploy repo"
+echo -e "\e[30;43;mSTATUS - Creating commit in deploy repo \e[0m"
 echo
-git push origin master || { echo "FAILURE - Push to deploy repo failed!"; exit 1; }
+git commit -m "Deploy ${commit_details}" || { echo -e "\e[30;101;mFAILURE - Commit in deploy repo failed! \e[0m"; exit 1; }
 echo
-echo "SUCCESS - Pushed to deploy repo"
+echo -e "\e[30;42;mSUCCESS - Created commit in deploy repo \e[0m"
+echo
+
+echo
+echo -e "\e[30;43;mSTATUS - Pushing to deploy repo \e[0m"
+echo
+git push origin master || { echo -e "\e[30;101;mFAILURE - Push to deploy repo failed! \e[0m"; exit 1; }
+echo
+echo -e "\e[30;42;mSUCCESS - Pushed to deploy repo \e[0m"
 echo
 
 cd ..
 echo
-echo "STATUS - Changed directory to root"
+echo -e "\e[30;43;mSTATUS - Changed directory to root \e[0m"
 echo
 
 rm -rf _site
 echo
-echo "STATUS - Delete _site folder"
+echo -e "\e[30;43;mSTATUS - Delete _site folder \e[0m"
 echo
 
 echo
-echo "Deployment successful!"
+echo -e "\e[30;42;mDeployment successful! \e[0m"
 echo
