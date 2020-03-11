@@ -58,4 +58,9 @@ var store = [{
         "excerpt":"How does it happen that simple things always manage to take up so much time? I don’t have the first clue, but I know it’s true. It’s happened to me too much for me to not believe in it. Anyhow, I’ve been working on a few things for the blog....","categories": ["blogging"],
         "tags": ["enhancement"],
         "url": "https://randommusings.netlify.com/blogging/2020/03/09/small-updates.html"
+      },{
+        "title": "Even more small updates",
+        "excerpt":"Continuing on with the small updates - Minified HTML - This made a HUGE difference. Like seriously huge, and unexpected to boot! I has not realized that it would be such a big deal. The site score on Google’s PageSpeed Insights tool went from 64 to 84 for mobile, while...","categories": ["blogging"],
+        "tags": ["enhancement"],
+        "url": "https://randommusings.netlify.com/blogging/2020/03/12/even-more-small-updates.html"
       }]
