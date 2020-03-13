@@ -63,4 +63,9 @@ var store = [{
         "excerpt":"Continuing on with the small updates - Minified HTML - This made a HUGE difference. Like seriously huge, and unexpected to boot! I has not realized that it would be such a big deal. The site score on Google’s PageSpeed Insights tool went from 64 to 84 for mobile, while...","categories": ["blogging"],
         "tags": ["enhancement"],
         "url": "https://randommusings.netlify.com/blogging/2020/03/12/even-more-small-updates.html"
+      },{
+        "title": "Anger",
+        "excerpt":"What do you do when you are angry? And I don’t mean like a little angry - like pouty-faced angry, or even shouting angry, or throwing things angry. I mean gut-wrenching, soul-crushing angry. So angry that it feels like hot lava burning up your insides and consuming you completely. Overwhelmingly...","categories": ["life"],
+        "tags": ["pain"],
+        "url": "https://randommusings.netlify.com/life/2020/03/13/anger.html"
       }]
