@@ -100,4 +100,4 @@ echo -e "\e[30;44m Deployment successful! \e[0m"
 echo -e "\e[30;44m ---------------------- \e[0m"
 echo
 
-notify-send -i info "Random Musings" "Blog deployment successful!"
+notify-send -i info -t 10000 "Random Musings" "Blog deployment successful!"
