@@ -6,7 +6,7 @@ DOESNT RELOAD CONFIG.YML :
 bundle exec jekyll serve --livereload --trace
 
 RELOADS CONFIG.YML :
-watchy -w _config.yml -- ruby "C:\Ruby25-x64\lib\ruby\gems\2.5.0\gems\bundler-2.1.2\exe\bundle" exec -- ruby "C:\Ruby25-x64\lib\ruby\gems\2.5.0\gems\jekyll-3.8.5\exe\jekyll" serve --livereload --trace
+watchy -w _config.yml -- ruby "C:\Ruby25-x64\lib\ruby\gems\2.5.0\gems\bundler-2.1.2\exe\bundle" exec -- ruby "C:\Ruby25-x64\lib\ruby\gems\2.5.0\gems\jekyll-4.0.0\exe\jekyll" serve --livereload --trace
 
 WHY WATCHY NEEDS THE COMPLEX SHITTY COMMAND:
 https://github.com/jekyll/jekyll/issues/2302#issuecomment-71201965
