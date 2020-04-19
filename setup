@@ -1,0 +1,17 @@
+bundle install
+gem uninstall eventmachine --force
+gem install eventmachine --platform ruby
+
+DOESNT RELOAD CONFIG.YML :
+bundle exec jekyll serve --livereload --trace
+
+RELOADS CONFIG.YML :
+watchy -w _config.yml -- ruby "C:\Ruby25-x64\lib\ruby\gems\2.5.0\gems\bundler-2.1.2\exe\bundle" exec -- ruby "C:\Ruby25-x64\lib\ruby\gems\2.5.0\gems\jekyll-3.8.5\exe\jekyll" serve --livereload --trace
+
+WHY WATCHY NEEDS THE COMPLEX SHITTY COMMAND:
+https://github.com/jekyll/jekyll/issues/2302#issuecomment-71201965
+
+WHY I'M USING GITHUB PAGES THEME INSTALLATION METHOD INSTEAD OF RUBY GEM BASED
+Commit# 5978bd4e828f72749e604e9fd8138ce27a322a32
+Attempt to un-fuck Github Pages fuckery
+Replace Ruby Gem method of theme installation with Github Pages method

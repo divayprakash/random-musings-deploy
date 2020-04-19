@@ -3,14 +3,14 @@
 	"file": "default.css",
 	"sources": [
 		"default.scss",
-		"../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/_functions.scss",
-		"../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/functions/_color.scss",
-		"../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/functions/_em.scss",
-		"../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/functions/_fluid-type.scss",
-		"../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/functions/_yiq.scss",
-		"../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/_variables.scss",
-		"../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/_notices.scss",
-		"../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/_skin.scss"
+		"../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/_functions.scss",
+		"../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/functions/_color.scss",
+		"../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/functions/_em.scss",
+		"../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/functions/_fluid-type.scss",
+		"../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/functions/_yiq.scss",
+		"../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/_variables.scss",
+		"../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/_notices.scss",
+		"../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/jekyll-theme-so-simple-3.2.0/_sass/so-simple/_skin.scss"
 	],
 	"sourcesContent": [
 		"@charset \"utf-8\";\n\n@import \"so-simple/functions\";\n@import \"so-simple/variables\";\n@import \"so-simple/notices\";\n\n/* Colors */\n$base-color: #000 !default;\n$text-color: #000 !default;\n$accent-color: #34374C !default;\n$nav-color: #fff !default;\n$background-color: #fff !default;\n$nav-background-color: #000 !default;\n$code-background-color: tint($base-color, 95%) !default;\n$border-color: tint($base-color, 80%) !default;\n\n$primary-color: #000 !default;\n$success-color: #62c462 !default;\n$warning-color: #f89406 !default;\n$danger-color: #ee5f5b !default;\n$info-color: #52adc8 !default;\n\n/* Syntax highlighting (base16) colors */\n$base00: #fafafa !default;\n$base01: #073642 !default;\n$base02: #586e75 !default;\n$base03: #657b83 !default;\n$base04: #839496 !default;\n$base05: #586e75 !default;\n$base06: #eee8d5 !default;\n$base07: #fdf6e3 !default;\n$base08: #dc322f !default;\n$base09: #cb4b16 !default;\n$base0a: #b58900 !default;\n$base0b: #859900 !default;\n$base0c: #2aa198 !default;\n$base0d: #268bd2 !default;\n$base0e: #6c71c4 !default;\n$base0f: #d33682 !default;\n\n@import \"so-simple/skin\";\n",

@@ -68,4 +68,9 @@ var store = [{
         "excerpt":"What do you do when you are angry? And I don’t mean like a little angry - like pouty-faced angry, or even shouting angry, or throwing things angry. I mean gut-wrenching, soul-crushing angry. So angry that it feels like hot lava burning up your insides and consuming you completely. Overwhelmingly...","categories": ["life"],
         "tags": ["pain"],
         "url": "https://randommusings.netlify.com/life/2020/03/13/anger.html"
+      },{
+        "title": "Change",
+        "excerpt":"As is popularly said, change is inevitable. Somehow, I always understood this, and took it to heart. I adapted it into my own adage - The only constant is change. Divay Prakash Well, not always. I sometimes think life hasn’t been particularly kind to me, but I’m very aware of...","categories": ["life"],
+        "tags": [],
+        "url": "https://randommusings.netlify.com/life/2020/04/19/change.html"
       }]
